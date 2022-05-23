@@ -12,14 +12,14 @@ on:
       repo:
         type: string
         required: true
-    secrets:
-      DOCKER_HUB_USERNAME:
-        required: true
-      DOCKER_HUB_TOKEN:
-        required: true
+#    secrets:
+#      DOCKER_HUB_USERNAME:
+#        required: true
+#      DOCKER_HUB_TOKEN:
+#        required: true
 jobs:
   build-and-publish:
-      name: Build and publish ${{ inputs.tag }}
+      name: Build and publish
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v3
